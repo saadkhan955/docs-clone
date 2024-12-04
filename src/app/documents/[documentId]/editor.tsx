@@ -18,6 +18,7 @@ import { EditorContent, useEditor } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
 import ImageResize from "tiptap-extension-resize-image"
 
+import { FontSizeExtension } from '@/extensions/font-size'
 import { useEditorStore } from '@/store/use-editor-store'
 
 export const Editor = () => {
@@ -58,6 +59,7 @@ export const Editor = () => {
     extensions: [
       StarterKit,
       Image,
+      FontSizeExtension,
       ImageResize,
       Highlight.configure({ multicolor: true }),
       Color,
